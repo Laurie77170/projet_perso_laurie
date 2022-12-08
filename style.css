@@ -3,6 +3,7 @@
     src: url(assets/font/Sail-Regular.ttf);
 }
 
+/*mise en forme générale*/
 body {
     margin: 0;
     font-family: "texte-body", cursive;
@@ -12,65 +13,30 @@ body {
 
 /*Mise en page du header*/
 .header {
+    margin-bottom: 45px;
     background-color: #CBF0DE;
-    height: 80px; 
-    display: flex;
-    align-items: center;
-    justify-content: center;   
 }
 
 .header__main {
 
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
-/* @media screen and (max-width: 680px) {
-    .header__main {
-        font-size: 20px;   
-}
-} */
 
-.header__title {
-    margin: 0;
-    font-size: 40px;
-}
-@media screen and (max-width: 680px) {
-    .header__title {
-        font-size: 40px;   
-}
-}
-@media screen and (min-width: 681px) {
-    .header__title {
-        font-size: 60px;   
-}
+.logo {
+    padding: 10px 10px;
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;  
 }
 
-.header__logo {
-    margin: 0 5px;
-    width: 45px;
-    height: 45px;
-}
-@media screen and (min-width: 681px) {
-    .header__logo {
-        width: 80px;
-        height: 80px;
-    }
+
+.bann__img {
+    max-width: 100%;
 }
 
-.bann {
-    margin-bottom: 50px;
-    background: url("assets/img/ustensiles_vert.jpg") center/cover;
-    height: 200px;
-    /* width: 100%; */
-   
-}
-/* @media screen and(min-width: 680px) {
-    .bann {
-        max-width: 100%;
-        height: auto;
-    }  
-} */
-/*Mise en place des liens*/
+/*Mise en place du main*/
 .main {
     display: flex;
     justify-content: space-around;
@@ -93,30 +59,27 @@ h2 {
 }
 
 .photos {
-    display: flex;
+    
 }
 
 .photos__img {
     margin-bottom: 0;
     border-radius: 5%;
-    height: 200px;
-    width: 200px;  
-    opacity: 1;
-    transition: opacity 0.3s ease-in-out, width 0.3s ease-in-out, height 0.3s ease-in-out;
-    -webkit-transition: all 2s ease-out;
-    transition: all 2s ease-out;
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
+   max-width: 100%;
+    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+    
 } 
 
-/* .photos__img:hover {
-    opacity: 0.7;
-    height: 200px;
-    width: 200px;
-} */
+.photos__img:hover {
+    transform: scale(1.2);
+}
 
+.card-front, .card-back {
+  
+    width: 200px;  
+}
 
-
+/*mise en page du footer*/
 footer {
     background-color:  #CBF0DE;
 }
@@ -135,9 +98,14 @@ footer {
 
 }
 
+h3 {
+    margin-top: 0px;
+}
+
 .text1, .text2 {
     font-size: 20px;
 }
+
 
 .aboutme {
     display: flex;
@@ -146,6 +114,11 @@ footer {
     align-items: center;
     align-content: center;
 }
+
+h4 {
+    font-size: 20px;
+}
+
 
 .socials {
     margin-top: 40px;
@@ -159,14 +132,15 @@ footer {
 max-width: 100%;
 }
 .facebook, .twitter, .pinterest {
+    width: 30px;
+    height: 30px;
+    /* margin-top: -55px; */
     display: flex;
-    justify-content: center;
-    width: 40px;
-    height: 35px;
+    justify-content: center;    
 }
 
-.sidebar_widget {
-    paddin
+h5 {
+    font-size: 30px;
 }
 
 .socials_media {
@@ -176,4 +150,45 @@ max-width: 100%;
 footer section {
     padding: 26px;
     text-align: center;
+}
+
+/*media query*/
+
+@media (min-width: 769px) {
+    .main {     
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+  }
+    /* .text1, .text2 {
+
+    } */
+   
+  
+    .follow_me {
+        font-size: 20px;
+        position: absolute;        
+        left: 50px;
+    }
+    .twitter, .pinterest {
+        width: 60px;
+        height: 65px;
+    }
+    .facebook {
+        width: 63px;
+        height: 68px;
+    }
+    .h5 {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 768px) {
+    .follow_me {
+        display: none;
+    }
+    .main {
+        flex-direction: column;
+    }
 }

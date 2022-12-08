@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link href="normalize.css" rel="stylesheet" type="text/css" />
@@ -12,38 +13,44 @@
 </head>
 
 <body>
+
     <header class="header">
         <div class="header__main">
-            <h1 class="header__title">Coup de</h1>
-            <img class="header__logo" src="assets/img/coeur_laurie.png" alt="heart" />
-            <h1 class="header__title">gourmand</h1>
+            <img class="logo" src="assets/img/logo.png" />
+            <img class="bann__img" src="assets/img/ustensiles_vert.png" alt="ust" />
         </div>
-        <!-- <div class="bann">
-            <img src="assets/img/ustensiles_vert.jpg" alt="ust"/>
-        </div> -->
     </header>
     <main>
-        <div class="bann">
-        </div>
         <section>
             <div class="main">
                 <div class="photos">
-                    <a href="apero-party.html">
+                    <div class="card-front">
                         <img src="assets/img/apero.jpg" class="photos__img" alt="image plats">
                         <h2 class="items">Apero Party</h2>
-                    </a>
+                    </div>
+                    <div class="card-back">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
                 </div>
                 <div class="photos">
-                    <a href="plats.html">
+                    <div class="card-front">
                         <img src="assets/img/plats.jpg" class="photos__img" alt="image plats">
                         <h2 class="items">Plats</h2>
-                    </a>
+                    </div>
+                    
+                    <div class="card-back">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
                 </div>
                 <div class="photos">
-                    <a href="desserts.html">
-                        <img src="assets/img/gateau.jpg" class="photos__img" alt="image desserts">
-                        <h2 class="items">Desserts</h2>
-                    </a>
+                    <div class="card-front">
+<img src="assets/img/gateau.jpg" class="photos__img" alt="image desserts">
+                    <h2 class="items">Desserts</h2>
+                    </div>
+                    
+                    <div class="card-back">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -62,7 +69,10 @@
                     <img src="assets/img/plage.jpg" class="photos__img2" alt="img_sect" />
                 </div>
                 <p class="text2">
-                    Sur ce blog, j'ai essayé de réunir les recettes qui me tenaient à coeur, pour que chacun puisse en bénéficier au gré de ses envies. Amusez-vous en cuisine et régalez votre entourage avec des saveurs du monde entier. Si mes recettes vous ont convaincus, abonnez-vous pour être alerter des nouvelles recettes.
+                    Sur ce blog, j'ai essayé de réunir les recettes qui me tenaient à coeur, pour que chacun puisse en
+                    bénéficier au gré de ses envies. Amusez-vous en cuisine et régalez votre entourage avec des saveurs
+                    du monde entier. Si mes recettes vous ont convaincus, abonnez-vous pour être alerter des nouvelles
+                    recettes.
                 </p>
                 <div class="aboutme">
                     <img src="assets/img/farine_coeur.jpg" class="photos__img2" alt="img_sect" />
@@ -70,23 +80,23 @@
             </div>
         </section>
         <div class="sidebar_widget">
-            <h3>Newsletter</h3>
+            <h4>Newsletter</h4>
+            <button class="bttn">S'abonner</button>
         </div>
         <div class="socials">
-            <h3>Suivez-moi</h3>
+            <h4 class="follow_me">Suivez-moi :</h4>
             <div class="facebook">
                 <img src="assets/img/facebook1.png" alt="socials" />
-                <h3 class="socials_media">Facebook</h3>
+                <h5 class="socials_media">Facebook</h5>
             </div>
             <div class="twitter">
                 <img src="assets/img/twitter.webp" alt="socials" />
-                <h3 class="socials_media">Twitter</h3>
+                <h5 class="socials_media">Twitter</h5>
             </div>
             <div class="pinterest">
                 <img src="assets/img/pinterest.webp" alt="socials" />
-                <h3 class="socials_media">Pinterest</h3>
+                <h5 class="socials_media">Pinterest</h5>
             </div>
-
         </div>
     </footer>
     <script src="script.js"></script>
